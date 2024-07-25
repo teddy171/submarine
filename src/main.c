@@ -26,7 +26,7 @@ int main()
 {
     stdio_init_all();
     Motor motors[2];
-    for(int i=0;i<=2;i++){
+    for(int i=0;i<=1;i++){
         gpio_set_dir(motor_pin[i],GPIO_OUT);
         gpio_set_dir(motor_pin[i+1],GPIO_OUT);
         motors[i].pin1 = motor_pin[i];
